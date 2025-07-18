@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: fastapi-nutrition-api
+    env: python
+    buildCommand: ""
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: OPENROUTER_API_KEY
+        value: your_actual_key_or_leave_blank
+    plan: free
