@@ -8,3 +8,8 @@ services:
       - key: OPENROUTER_API_KEY
         value: your_actual_key_or_leave_blank
     plan: free
+    build:
+      env:
+        - key: PYTHON_VERSION
+          value: 3.10.13
+
